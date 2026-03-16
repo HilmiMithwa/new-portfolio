@@ -13,7 +13,7 @@ function App() {
           <MenuButtonNavbar/>
         </nav>
           
-        <main id='mainBody' className='flex  max-[430px]:flex-col min-[428px]:items-center min-[428px]:text-center'>
+        <main id='mainBody' className='flex  min-[428px]:flex-col min-[428px]:items-center min-[428px]:text-center'>
           <h1 className="min-[428px]:text-[60px] font-medium min-[428px]:text-center">Hey There,</h1>
           <h1 className="min-[428px]:text-[60px] font-medium min-[428px]:text-center pb-10">I'm Hilmi</h1>
           <img src={fotoHilmi} className="min-[428px]:w-62.5"/>
