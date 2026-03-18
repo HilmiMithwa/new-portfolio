@@ -34,7 +34,7 @@ function App() {
     <>
       <div className="font-roboto bg-black text-white min-h-screen">
 
-        <nav id="navbar" className='pb-35'>
+        <nav id="navbar" className='pb-35 '>
           <MenuButtonNavbar/>
         </nav>
           
@@ -49,8 +49,7 @@ function App() {
             variants={sectionVariants}
             className="flex min-[428px]:flex-col min-[428px]:items-center"
           >
-            <h1 className="min-[428px]:text-[60px] font-medium min-[428px]:text-center">Hey There,</h1>
-            <h1 className="min-[428px]:text-[60px] font-medium min-[428px]:text-center pb-10">I'm Hilmi</h1>
+            <h1 className="min-[428px]:text-[60px] font-medium min-[428px]:text-center">Hey There, <br />I'm Hilmi</h1>
             <img src={fotoHilmi} className="min-[428px]:w-62.5"/>
           </motion.div>
         
@@ -73,7 +72,7 @@ function App() {
                 }}
                 />
             </h3>
-            <p className="min-[428px]:text-center min-[428px]:pt-8.75 min-[428px]:p-16 flex flex-wrap text-[18px]" id="about">
+            <p className="min-[428px]:text-center min-[428px]:pt-8.75 min-[428px]:p-16 flex text-wrap text-[18px] lg:text-[40px]" id="about">
               Iam an undergraduate Software Engineer student at Universitas Pendidikan Indonesia, passionate about building innovative solutions through technology. Currently, i’m deepening my skills on Machine Learning, exploring how intelligent system can solve real world problems.
             </p>
             <a className="text-[30px]  border-[#0288D1] border-2 min-[428px]:w-65.75 items-center min-[428px]:items-center mx-auto rounded-[10px] p-3" href="https://linkedin.com/in/hilmi-mithwa-ramadhan-4a1b46275/">My LinkedIn</a>
