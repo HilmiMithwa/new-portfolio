@@ -9,6 +9,7 @@ import pythonImage from './images/akar-icons_python-fill.png'
 import javascriptImage from './images/ri_javascript-fill.png'
 import tailwindImage from './images/lineicons_tailwindcss.png'
 import nextImage from './images/next-js.png'
+import instagramImage from './images/ri_instagram-fill.png'
 
 import { motion } from 'motion/react'
 
@@ -74,7 +75,7 @@ function App() {
             <p className="min-[428px]:text-center min-[428px]:pt-8.75 min-[428px]:p-16 flex flex-wrap text-[18px]" id="about">
               Iam an undergraduate Software Engineer student at Universitas Pendidikan Indonesia, passionate about building innovative solutions through technology. Currently, i’m deepening my skills on Machine Learning, exploring how intelligent system can solve real world problems.
             </p>
-            <a className="text-[30px]  border-[#0288D1] border-2 min-[428px]:w-65.75 items-center min-[428px]:items-center mx-auto rounded-[10px] p-3">My LinkedIn</a>
+            <a className="text-[30px]  border-[#0288D1] border-2 min-[428px]:w-65.75 items-center min-[428px]:items-center mx-auto rounded-[10px] p-3" href="https://linkedin.com/in/hilmi-mithwa-ramadhan-4a1b46275/">My LinkedIn</a>
           </div>
           </motion.div>
           
@@ -93,27 +94,27 @@ function App() {
                   <img src={reactImage}></img>
                   <p className="text-[25px]">React</p>
                 </div>
-                
+
                 <div className="border-white border-3 flex flex-col items-center w-89.75 h-47 justify-center rounded-[15px]">
                   <img src={figmaImage}></img>
                   <p className="text-[25px]">Figma</p>
                 </div>
-                
+
                 <div className="border-white border-3 flex flex-col items-center w-89.75 h-47 justify-center rounded-[15px]">
                   <img src={pythonImage}></img>
                   <p className="text-[25px]">Python</p>
                 </div>
-                
+
                 <div className="border-white border-3 flex flex-col items-center w-89.75 h-47 justify-center rounded-[15px]">
                   <img src={javascriptImage}></img>
                   <p className="text-[25px]">Javascript</p>
                 </div>
-                
+
                 <div className="border-white border-3 flex flex-col items-center w-89.75 h-47 justify-center rounded-[15px]">
                   <img src={tailwindImage}></img>
                   <p className="text-[25px]">Tailwind CSS</p>
                 </div>
-                
+
                 <div className="border-white border-3 flex flex-col items-center w-89.75 h-47 justify-center rounded-[15px]">
                   <img src={nextImage}></img>
                   <p className="text-[25px]">Next.Js</p>
@@ -121,6 +122,23 @@ function App() {
               </div>
             </div>
           </motion.div>
+
+          {/* Social Media*/}
+          <motion.div
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.3}}
+            variants={sectionVariants}
+            className="flex min-[428px]:flex-col min-[428px]:items-center"
+          >
+            <div className="min-[428px]:pt-8.75">
+              <h1 className="font-semibold text-[60px] pb-8.75" id="skills">Social Media</h1>
+
+              <div>
+
+              </div>
+            </div>
+          </motion.div>       
           
             
 
