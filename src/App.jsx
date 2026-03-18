@@ -10,17 +10,18 @@ import javascriptImage from './images/ri_javascript-fill.png'
 import tailwindImage from './images/lineicons_tailwindcss.png'
 import nextImage from './images/next-js.png'
 import instagramImage from './images/ri_instagram-fill.png'
+import githubImage from './images/mdi_github.png'
 
 import { motion } from 'motion/react'
 
 const sectionVariants = {
   hidden: { 
     opacity: 0, 
-    y: 50 // Elemen mulai dari 50px di bawah posisi aslinya
+    y: 50 
   },
   visible: { 
     opacity: 1, 
-    y: 0, // Kembali ke posisi asli
+    y: 0, 
     transition: { 
       duration: 0.8, 
       ease: "easeOut" 
@@ -38,7 +39,7 @@ function App() {
         </nav>
           
         
-        <main id='mainBody' className='flex min-[428px]:flex-col min-[428px]:items-center min-[428px]:text-center '>
+        <main id='mainBody' className='flex min-[428px]:flex-col min-[428px]:items-center min-[428px]:text-center'>
 
           {/* Nama dan foto */}
           <motion.div
@@ -129,21 +130,23 @@ function App() {
             whileInView='visible'
             viewport={{ once: true, amount: 0.3}}
             variants={sectionVariants}
-            className="flex min-[428px]:flex-col min-[428px]:items-center"
           >
-            <div className="min-[428px]:pt-8.75">
-              <h1 className="font-semibold text-[60px] pb-8.75" id="skills">Social Media</h1>
-
-              <div>
-
+            <div className="min-[428px]:pt-8.75 flex justify-center gap-10 flex-wrap p-10">
+              <h1 className="font-semibold text-[60px] pb-8.75 w-full" id="social">Social Media</h1>
+              <div className=" bg-[#151A20] w-90.75 h-19 flex rounded-[10px]">
+                <a href="https://www.instagram.com/hilmimthwaa__/" className="flex items-center">
+                  <img src={instagramImage} className="p-5"></img>
+                  <p className="text-[25px]">@hilmimthwaa__</p>
+                </a>
+              </div>
+              <div className=" bg-[#151A20] w-90.75 h-19 flex rounded-[10px]">
+                <a href="https://www.instagram.com/hilmimthwaa__/" className="flex items-center">
+                  <img src={githubImage} className="p-5"></img>
+                  <p className="text-[25px]">HilmiMithwa</p>
+                </a>
               </div>
             </div>
           </motion.div>       
-          
-            
-
-
-          
         </main>
 
       </div>
